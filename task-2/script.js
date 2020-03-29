@@ -33,6 +33,32 @@ for(let i = 0; i < 2; i++){
 let result = appData.moneyData / month;
 alert('бюджет на 1 день составляет ' + result);
 
+if(result < 100){
+    console.log('Минимальный уровень достатка');
+} else if(result > 100 && result < 2000){
+    console.log('Средний уровень достатка');
+}else if(result > 2000){
+    console.log('Высокий уровень достатка');
+}else{
+    console.log('произошла ошибка');
+}
+
+/* почему-то тут срабатывает дефолтное значение
+switch(result){
+    case result < 100:
+        console.log('Минимальный уровень достатка');
+        break;
+    case result > 100 && result < 2000:
+        console.log('Средний уровень достатка');
+        break;
+    case result > 2000:
+        console.log('Высокий уровень достатка');
+        break;
+    default :
+        console.log('error');
+        break;
+}
+*/
 
 /* пример с использованием цикла while
 let i = 0;
